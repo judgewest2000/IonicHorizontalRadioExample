@@ -1,0 +1,7 @@
+<div [formGroup]="myForm">
+  <ion-segment mode="ios" formControlName="item">
+    <ion-segment-button *ngFor="let listitem of listitems" [value]="listitem.id">
+      {{listitem.name}}
+    </ion-segment-button>
+  </ion-segment>
+</div>
