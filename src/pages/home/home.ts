@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { SegmentRadioComponentListItems } from '../../components/segment-radio/segment-radio';
+import { SegmentRadioComponentListItem } from '../../components/segment-radio/segment-radio';
 import { FormControl } from '@angular/forms';
 
 @Component({
@@ -16,7 +16,7 @@ export class HomePage {
     return this.items.filter(i => i.id === this.selectedId.value as number)[0];
   }
 
-  items: SegmentRadioComponentListItems[] = [
+  items: SegmentRadioComponentListItem[] = [
     { id: 1, name: 'Coke' },
     { id: 2, name: 'Pepsi' },
     { id: 3, name: 'Sprite' },

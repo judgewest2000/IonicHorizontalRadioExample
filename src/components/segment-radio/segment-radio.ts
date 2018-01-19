@@ -8,7 +8,7 @@ import { AbstractControl, FormGroup } from '@angular/forms';
  * Components.
  */
 
-export interface SegmentRadioComponentListItems {
+export interface SegmentRadioComponentListItem {
   id: any;
   name: string;
 }
@@ -21,7 +21,7 @@ export class SegmentRadioComponent {
 
   @Input() selectedId: AbstractControl;
 
-  @Input() listitems: SegmentRadioComponentListItems[];
+  @Input() listitems: SegmentRadioComponentListItem[];
 
   myForm: FormGroup
 
